@@ -1,0 +1,24 @@
+@import './main.css';
+
+:root{
+    --black: #202020;
+    --white: #ffff;
+    --fondo: hsl(252, 100%, 67%);
+    --fondo2:  hsl(241, 81%, 54%);
+    --circulo: hsla(256, 72%, 46%, 1);
+    --reaccion: hsl(9, 100%, 64%, 0.2);
+    --memoria: hsl(39, 100%, 56%, 0.2);
+    --verbal: hsl(166, 100%, 37%, 0.2);
+    --visual: hsl(234, 85%, 45%, 0.2);
+    --reacciontitle: hsl(9, 100%, 64%);
+    --memoriatitle: hsl(39, 100%, 56%);
+    --verbaltitle: hsl(166, 100%, 37%);
+    --visualtitle: hsl(234, 85%, 45%);
+    --boton: hsl(224, 30%, 27%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk';
+ }
