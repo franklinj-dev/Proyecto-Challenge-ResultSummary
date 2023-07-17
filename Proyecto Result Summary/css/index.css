@@ -22,3 +22,7 @@ body{
     padding: 0;
     font-family: 'Hanken Grotesk';
  }
+
+ input{
+    text-align: center;
+ }

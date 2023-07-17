@@ -1,5 +1,10 @@
 .principal-container{
     display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    
 }
 
 .general-result-container{
@@ -9,6 +14,28 @@
     text-align: center;
     border-radius: 30px;
     background-image: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    width: 375px;
+    height: 450px;
+}
+
+.general-result-container-danger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom,hsl(0, 91%, 39%),hsl(0, 96%, 47%));
+    width: 375px;
+    height: 450px;
+}
+
+.general-result-container-caution{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom,hsl(61, 98%, 50%),hsl(56, 100%, 41%));
     width: 375px;
     height: 450px;
 }
@@ -24,6 +51,20 @@
     height: 200px;
 }
 
+.result-danger{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom,hsl(0, 91%, 39%),hsl(0, 96%, 47%));
+}
+
+.result-caution{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(to bottom,hsl(61, 98%, 50%),hsl(56, 100%, 41%));
+}
+
 .result > h1{
     color: var(--white);
     margin-top: 50px;
@@ -32,7 +73,31 @@
     
 }
 
+.result-danger > h1{
+    color: var(--white);
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 50px;
+    
+}
+
+.result-caution > h1{
+    color: var(--white);
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 50px;
+    
+}
+
 .result > p {
+    color: var(--white);
+}
+
+.result-danger > p {
+    color: var(--white);
+}
+
+.result-caution > p {
     color: var(--white);
 }
 
@@ -76,7 +141,8 @@
     border-radius: 10px;
     width: 80%;
     margin-top: 10px;
-    
+    align-items: center;
+
 }
 
 .reaction > h3{
@@ -84,11 +150,20 @@
     color: var(--reacciontitle);
 }
 
+#reactionvalue{
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+}
+
 .memory{
     background-color: var(--memoria);
     border-radius: 10px;
     width: 80%;
     margin-top: 10px;
+    align-items: center;
 }
 
 .memory > h3{
@@ -96,11 +171,21 @@
     color: var(--memoriatitle);
 }
 
+#memoryvalue{
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+
 .verbal{
     background-color: var(--verbal);
     border-radius: 10px;
     width: 80%;
     margin-top: 10px;
+    align-items: center;
 }
 
 .verbal > h3{
@@ -108,17 +193,39 @@
     color: var(--verbaltitle);
 }
 
+#verbalvalue{
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+    margin-left: 20px;
+}
+
+
 .visual{
     background-color: var(--visual);
     border-radius: 10px;
     width: 80%;
     margin-top: 10px;
+    align-items: center;
 }
 
 .visual > h3{
     margin-right: 80px;
     color: var(--visualtitle);
 }
+
+#visualvalue{
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+    margin-left: 25px;
+ 
+}
+
 
 .bottom-continue{
 
@@ -127,13 +234,16 @@
         height: 40px;
         border-radius: 30px;
         margin-top: 20px;
+        align-self: center;
+        color: var(--white);
         
 }
 
-.bottom{
-    margin-top: 10px;
-    text-decoration: none;
-    color: var(--white);
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 
