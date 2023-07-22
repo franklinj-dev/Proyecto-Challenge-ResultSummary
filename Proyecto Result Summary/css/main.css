@@ -35,7 +35,7 @@
     align-items: center;
     text-align: center;
     border-radius: 30px;
-    background-image: linear-gradient(to bottom,hsl(61, 98%, 50%),hsl(56, 100%, 41%));
+    background-image: linear-gradient(to bottom,hsl(39, 100%, 56%),hsl(56, 90%, 37%));
     width: 375px;
     height: 450px;
 }
@@ -62,7 +62,7 @@
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    background-image: linear-gradient(to bottom,hsl(61, 98%, 50%),hsl(56, 100%, 41%));
+    background-image: linear-gradient(to bottom,hsl(39, 100%, 56%),hsl(56, 100%, 41%));
 }
 
 .result > h1{
@@ -236,9 +236,13 @@
         margin-top: 20px;
         align-self: center;
         color: var(--white);
+        transition-duration: 0.4s;
         
 }
 
+form>div>button:hover{
+    background-color: var(--circulo);
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
